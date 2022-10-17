@@ -7,23 +7,26 @@ class Student : public Person{
 protected:
     int Mark;
     string Course;
-    int OOP_number = 0;
-    int M_number = 0;
 public:
     void setCourse(string course){
-        if(Course == "Object Oriented Programming"){
-            OOP_number++;
+        // set the course OOP
+        if(course == "OOP"){
             Course = course;
-        }else if(Course == "Marketing"){
-            M_number++;
+        // set the course Marketing
+        }else if(course == "Marketing"){
             Course = course;
+        // the invalid input
         }else{
-            cout <<"This course does not exist" << endl;
+            cout <<"This course does not exist, failed to select a course" << endl;
+            Course = "unselected";
         }
     }
+    virtual int get() = 0;
+    // set the course
     string getCourse(){
         return Course;
     }
+    // get the mark
     int getMark(){
         return Mark;
     }
