@@ -18,14 +18,14 @@ int main(){
     Course *b = new Course[10];
     d.print();
     while( loop != 0){
-        int num1;
+        string num1;
         cin >> num1;
-        if(num1 == 0){
+        if(num1 == "0"){
             cout << "Exit the system successfully" << endl;
             delete [] a;
             delete [] b;
             return 0;
-        }else if(num1 == 1){
+        }else if(num1 == "1"){
             if(count < 11){
                 string name, gender, faculty, course;
                 int id, age;
@@ -47,12 +47,12 @@ int main(){
                 cout << "Please enter the number 0 to 6 proceed  to the next step" << endl;
                 count++;
             }
-        }else if(num1 == 2){
+        }else if(num1 == "2"){
             a = b;
             cout << "All student information deleted successfully" << endl;
             count = 0;
             cout << "Please enter the number 0 to 6 proceed  to the next step" << endl;
-        }else if(num1 == 3){
+        }else if(num1 == "3"){
             string studentName;
             cout << "enter the student's name" <<endl;
             cin >> studentName;
@@ -72,10 +72,10 @@ int main(){
                 cout << "this student does not exit" << endl;
                 cout << "Please re-enter the number 0 to 6" << endl;    
             }
-        }else if(num1 == 4 && a[0].getAge() == 0){
+        }else if(num1 == "4" && a[0].getAge() == 0){
             cout << "No student information has been stored" << endl;
             cout << "Please enter the number 0 to 6 proceed  to the next step" << endl;
-        }else if(num1 == 4 || a[0].getAge() != 0){
+        }else if(num1 == "4" || a[0].getAge() != 0){
             for(int i = 0; i<count; i++){
                 cout << "Name :" << a[i].getName() <<"  ID :"<< a[i].getId() <<endl;
                 cout << "Age :" << a[i].getAge() << "   Gender :" << a[i].getGender() <<endl;
@@ -83,13 +83,13 @@ int main(){
                 cout <<"-----------------------------------"<< endl;
             }
             cout << "Please enter the number 0 to 6 proceed  to the next step" << endl;
-        }else if(num1 == 5){
+        }else if(num1 == "5"){
             cout << "Course instructors" << endl;
             cout << "OOP: " << a->getOOP_teacher() << endl;
             cout << "Marketing: " << a->getM_teacher()<< endl;
             cout <<"-----------------------------------"<< endl;
             cout << "Please enter the number 0 to 6 proceed  to the next step" << endl;
-        }else if(num1 == 6){
+        }else if(num1 == "6"){
             string OOP;
             string Marketing;
             cout << "Enter the name of OOP teacher" << endl;
