@@ -1,0 +1,138 @@
+Test Cases for ‘Add the student information’ function
+Test Description: The newly added student information will be successfully added.
+
+Steps to be Executed: 1. Choose number “1” as next step
+                      2. Enter the number of student that want to add to the system
+                      3. Enter the name of the student
+                      4. Enter the unique student ID
+                      6. Enter the age the student
+                      6. Choose the course - 1.Object Oriented Programming/2.Marketing
+                      7. The information is added successfully
+                      8. The message 'Please enter the number 0 to 6 proceed to the next step' will be display 
+                        
+Number of Student   Student Number          Name              Age                Course                 Test Results
+        1              24680           Landon Austin          24      Object Oriented Programming      Add Successful.
+        3              369123          Drake Murphy           39      Object Oriented Programming
+                       1234567         Winona Oak             21      Marketing
+                       435781          Marlene Hughes         33      Marketing                        Add Successful.
+        2              2209            Kaz Benson             46      Object Oriented Programming
+                       9022            Ben Schuyler           44      Object Oriented Programming      Add Successful.
+        1              -2000           Adam Christopher       62      Object Oriented Programming      Add Unsuccessful, due to Invalid ID.
+        7              123             Andrew Allen           22      Marketing        
+                       45678           Wade Graves            67      Marketing        
+                       9012345         Gentle Bones           50      Object Oriented Programming
+                       9678474         Conor Matthews         19      Marketing  
+                       45926           Tabitha Nausea         48      Object Oriented Programming
+                       868686          Abi Bernadette         37      Marketing  
+                       432156          Tatiana Manes          23      Object Oriented Programming      Add Successful.
+
+
+
+Test Cases for 'Delete all the student information’ function
+Test Description: All the student information will be deleted.
+
+Steps to be Executed: 1. Choose number “2” as next step
+                      2. All the student information will be deleted
+                      3. The message "All student information deleted successfully" 
+                         "Please enter the number 0 to 6 proceed to the next step" will be display
+
+Test Results: All student information deleted successfully.
+
+
+
+Test Cases for ‘Edit the students' mark’ function
+Test Description: Chosen student will be edited.
+
+Steps to be Executed: 1. Choose number “3” as next step
+                      2. Enter the student name that want to edit
+                      3. Enter the student's mark
+                      4. The mark is edited successfully
+                      4. The message 'Please enter the number 0 to 6 proceed to the next step' will be display 
+                     
+Student Number          Name              Age                Course              Course Mark       Test Results
+   432156          Tatiana Manes          23      Object Oriented Programming        76         Edited successfully.
+   435781          Marlene Hughes         33      Marketing                          89         Edited successfully.
+   44444           Mark Ambor             56      Object Oriented Programming        92         Failed, this student does not exit.
+   123             Andrew Allen           22      Marketing                          65         Edited successfully.
+   24680           Landon Austin          24      Object Oriented Programming        96         Edited successfully.
+   369123          Drake Murphy           39      Object Oriented Programming        52         Edited successfully.
+   1234567         Winona Oak             21      Marketing                          48         Edited successfully.
+   868686          Abi Bernadette         37      Marketing                          68         Edited successfully.
+   45926           Tabitha Nausea         48      Object Oriented Programming        32         Edited successfully.
+   1233333         Max Landry             25      Marketing                          20         Failed, this student does not exit.
+   9012345         Gentle Bones           50      Object Oriented Programming        77         Edited successfully.
+   9022            Ben Schuyler           44      Object Oriented Programming        69         Edited successfully.
+   9678474         Conor Matthews         19      Marketing                          35         Edited successfully.
+   45678           Wade Graves            67      Marketing                          83         Edited successfully.
+   2209            Kaz Benson             46      Object Oriented Programming        62         Edited successfully.
+ 
+
+
+
+Test Cases for ‘Display all the student information’ function
+Test Description: All student information in the system will be displayed.
+
+Steps to be Executed: 1. Choose the number “4” as next step
+                      2. All student information that stored in the system will be displayed
+
+Student Number          Name              Age                Course              Course Mark   
+   24680           Landon Austin          24      Object Oriented Programming        96
+   369123          Drake Murphy           39      Object Oriented Programming        52
+   1234567         Winona Oak             21      Marketing                          48
+   435781          Marlene Hughes         33      Marketing                          89 
+   2209            Kaz Benson             46      Object Oriented Programming        62
+   9022            Ben Schuyler           44      Object Oriented Programming        69
+   123             Andrew Allen           22      Marketing                          65       
+   45678           Wade Graves            67      Marketing                          83
+   9012345         Gentle Bones           50      Object Oriented Programming        77
+   9678474         Conor Matthews         19      Marketing                          35
+   45926           Tabitha Nausea         48      Object Oriented Programming        32
+   868686          Abi Bernadette         37      Marketing                          68
+   432156          Tatiana Manes          23      Object Oriented Programming        76     
+
+ Test Results: Successfully displayed. 
+
+
+
+Test Cases for ‘Display the course information’ function
+Test Description: Course information in the system will be displayed.
+
+Steps to be Executed: 1. Choose the number “5” as next step
+                      2. The course information will be display
+                      3. The message 'Please enter the number 0 to 6 proceed to the next step' will be display 
+
+Course                             Course Instructor
+Object Oriented Programming        Feras Dayoub
+Marketing                          Lisa Powell
+
+Test Results: Successfully displayed.                     
+
+
+
+Test Cases for ‘Edit the course instructor information' function
+Test Description: Chosen course instructor information will be edited.
+
+Steps to be Executed: 1. Choose number "6" as next step
+                      2. Enter the name of OOP teacher
+                      3. Enter the name of Marketing teacher
+             
+Course                            Course Instructor        Test Results
+Object Oriented Programming        Feras Dayoub         Edited successfully.
+Marketing                          Lisa Powell          Edited successfully.
+
+
+
+Test Cases for 'Exit the Management System' function
+
+Steps to be Executed: 1. Choose the number “0” as next step
+                      2. Exit the system
+                      3. The message 'Exit the system successfully' will be display
+
+Test Results: Exit successfully.
+
+
+
+
+
+
+
